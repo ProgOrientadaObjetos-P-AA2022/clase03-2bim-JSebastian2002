@@ -55,9 +55,27 @@ public class ReportePresencial extends Reporte{
         return promedioGeneral;
     }
     
-    @Override
-    public String toString(){
-        return "";
+     @Override
+     public String toString() {
+        String cadenaEstudiantes = String.format("%s\n", "Lista Estudiantes");
+        for (int i = 0; i < lista.size(); i++) {
+            cadenaEstudiantes = String.format("%s%s\n",
+                    cadenaEstudiantes,
+                    lista.get(i));
+        }
+        String cadena = String.format("%s\nCarrera: %s \n"
+                + "Ciclo: %s\n\n"
+                + "%s"
+                + "El total de matriculas es: %.2f\n"
+                + "Promedio General: %.3f\n",
+                nombre,
+                carrera,
+                ciclo,
+                cadenaEstudiantes,
+                obtenerTotalMatriculasDistancia(),
+                obtenerPromedioGeneral());
+        return cadena;
+
     }
-    
+
 }
