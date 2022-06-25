@@ -53,7 +53,7 @@ public class EjecutaEstudiante {
             if (tipoEstudiante == 1) {
 
                 // Declarar,crear e iniciar objeto tipo EstudiantePresencial
-                EstudiantePresencial e = new EstudiantePresencial();
+                EstudiantePresencial e1 = new EstudiantePresencial();
                 // Solicitar ingreso de valores para variables 
                 // Solicitar numeroCreds, costoCred
                 // Leer numeroCreds, costoCred
@@ -63,19 +63,19 @@ public class EjecutaEstudiante {
                 costoCred = Double.parseDouble(entrada.nextLine());
                 // se hace uso de los métodos establecer para asignar valores
                 // a los datos (atributos) del objeto
-                e.establecerNombresEstudiante(nombresEst);
-                e.establecerApellidoEstudiante(apellidosEst);
-                e.establecerIdentificacionEstudiante(identificacionEst);
-                e.establecerEdadEstudiante(edadEst);
-                e.establecerNumeroCreditos(numeroCreds);
-                e.establecerCostoCredito(costoCred);
+                e1.establecerNombresEstudiante(nombresEst);
+                e1.establecerApellidoEstudiante(apellidosEst);
+                e1.establecerIdentificacionEstudiante(identificacionEst);
+                e1.establecerEdadEstudiante(edadEst);
+                e1.establecerNumeroCreditos(numeroCreds);
+                e1.establecerCostoCredito(costoCred);
                 // Se agrega al arreglo estudiantes un objeto de tipo
                 // EstudiantePresencial
 //                estudiantes[contador] = estudianteP;
-                estudiantes.add(e);
+                estudiantes.add(e1);
             } else {
                 if (tipoEstudiante == 2) {
-                    EstudianteDistancia estudianteD = new EstudianteDistancia();
+                    EstudianteDistancia e2 = new EstudianteDistancia();
                     // Solicitar ingreso de valores para variables 
                     // Solicitar numeroAsigs, costoAsig 
                     // Leer numeroAsigs, costoAsig
@@ -85,15 +85,15 @@ public class EjecutaEstudiante {
                     costoAsig = Double.parseDouble(entrada.nextLine());
                     // se hace uso de los métodos establecer para asignar valores
                     // a los datos (atributos) del objeto
-                    estudianteD.establecerNombresEstudiante(nombresEst);
-                    estudianteD.establecerApellidoEstudiante(apellidosEst);
-                    estudianteD.establecerIdentificacionEstudiante(identificacionEst);
-                    estudianteD.establecerEdadEstudiante(edadEst);
-                    estudianteD.establecerNumeroAsginaturas(numeroAsigs);
-                    estudianteD.establecerCostoAsignatura(costoAsig);
+                    e2.establecerNombresEstudiante(nombresEst);
+                    e2.establecerApellidoEstudiante(apellidosEst);
+                    e2.establecerIdentificacionEstudiante(identificacionEst);
+                    e2.establecerEdadEstudiante(edadEst);
+                    e2.establecerNumeroAsginaturas(numeroAsigs);
+                    e2.establecerCostoAsignatura(costoAsig);
                     // Se agrega al arreglo estudiantes un objeto de tipo
                     // EstudianteDistancia
-                    estudiantes.add(estudianteD);
+                    estudiantes.add(e2);
                 }else{
                     System.out.println("Opción fuera de rango");
                 }
