@@ -5,7 +5,7 @@
  */
 package paquete01;
 
-public abstract class Docente {
+public  class Docente {
     private String nombre;
     
     public Docente(String n){

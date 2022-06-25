@@ -1,5 +1,10 @@
-
-package paquete03;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package paquete05;
+import paquete04.*;
 
 public abstract class Estudiante {
     /*
@@ -44,7 +49,6 @@ public abstract class Estudiante {
         // método sin impĺementar, se deja la responsabilidad 
         // a las clases derivadas
     */
-    // solo lo esta declarando no se le puede dar cuerpo
     public abstract void calcularMatricula();
     
     //  Métodos obtener para los datos o atributos de la clase
@@ -68,7 +72,29 @@ public abstract class Estudiante {
         return edadEstudiante;
     }
     
+    /*
+    Método obtenerMatricula() : Real
+        a.  return matricula
+        b.  Fin Método obtenerMatricula
+    */
     public double obtenerMatricula(){
         return matricula;
+    }
+    
+    
+    @Override
+    public String toString() {
+        String reporte = String.format("Datos Estudiante\n"
+                + "Nombre completo del estudiante:%s\n"
+                + "Apellido completo del estudiante:%s\n"
+                + "Identificacion del estudiante:%s\n"
+                + "Edad del estudiante:%d\n"
+                + "Matricula:%.2f\n",
+                obtenerNombresEstudiante(),
+                obtenerApellidoEstudiante(),
+                obtenerIdentificacionEstudiante(),
+                obtenerEdadEstudiante(),
+                obtenerMatricula());
+        return reporte;
     }
 }

@@ -21,12 +21,13 @@ public class EjecutaEstudiante {
         int tipoEstudiante;
         String continuar;
         int contador;
-        Estudiante [] estudiantes = new Estudiante[10];
+        //Guardar objetos de la subclase
+        Estudiante [] estudiantes = new Estudiante[2];
 
         // Incio ciclo repetitivo que permite generar 10 objetos de tipo
         // EstudiantePresencial y EstudianteDistancia 
         contador = 0;
-        while(contador<10){
+        while(contador<2){
             // Se imprime mensaje en pantalla para solicitar
             // el tipo de estudiante que se desea ingresar
             System.out.println("Tipo de Estudiante a ingresar\n"
@@ -105,15 +106,14 @@ public class EjecutaEstudiante {
             
             contador = contador + 1;
         }
-        
+        // Un arreglo estudiantes con objetos: EstudiantePresencial y EstudiantesDistancia
         // Luego de crear y almancenar los objetos EstudiantePresencial
         // y EstudianteDistancia, se procede a usar un ciclo repetitivo
         // para recorrer el arreglo estudiantes, que permitirá:
         // 1. Llamar al método abstracto calcularMatricula, de acuedo a las
         // características propias de cada objeto.
         // 2. Presentar en pantalla los valores que se necesite.
-
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 2; i++) {
             // 1.  
             estudiantes[i].calcularMatricula();
             // en el punto 1, estudiantes[i] representa un objeto de tipo 
