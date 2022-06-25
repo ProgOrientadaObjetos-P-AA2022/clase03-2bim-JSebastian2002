@@ -37,7 +37,7 @@ public class EjecutaEstudiante {
         ArrayList<Estudiante> estudiantes = new ArrayList<>();
         // inicio de solución
               do {
-            System.out.println("Menu de Opciones\n"
+            System.out.println("Reporte de Datos"
                     +"Seleccione el objeto de tipo Estudiante a crear\n"
                     + "Ingrese (1) para Estudiante Presencial\n"
                     + "Ingrese (2) para Estudiante Distancia\n");
